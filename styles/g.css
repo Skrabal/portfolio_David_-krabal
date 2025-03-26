@@ -1,0 +1,79 @@
+body {
+ background-color: #ffffff;
+ margin: 0;
+    padding: 0;
+    min-height: 200vh;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+.navbar {
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+.navbar a:hover {
+  background-color: #555;
+}
+.navbar .active {
+  font-weight: bold;
+  background-color: #666;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dvě sloupce */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #004ca3; /* Modrý rámeček */
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.ferrari{
+  width: 70%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #004ca3; /* Modrý rámeček */
+  text-align: center;
+}
+
+/* Responsivní design pro mobily */
+@media screen and (max-width: 600px) {
+  .gallery {
+      grid-template-columns: 1fr; /* Na mobilu budou obrázky pod sebou */
+  }
+}
