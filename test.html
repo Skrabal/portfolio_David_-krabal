@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatický přílet JS</title>
+    <style>
+        img {
+            position: absolute;
+            left: -200px; /* Start mimo obrazovku */
+            top: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="obrazek" src="https://via.placeholder.com/100" alt="Obrázek">
+
+    <script>
+        window.onload = function() {
+            let obrazek = document.getElementById("obrazek");
+            let pozice = -200; // Start mimo obrazovku
+
+            function animace() {
+                if (pozice < 200) { // Cílová pozice
+                    pozice += 5; // Posun o 5px
+                    obrazek.style.left = pozice + "px";
+                    requestAnimationFrame(animace);
+                }
+            }
+
+            animace();
+        };
+    </script>
+
+</body>
+</html>

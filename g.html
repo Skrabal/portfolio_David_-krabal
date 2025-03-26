@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/g.css">
+    <link rel="stylesheet" href="styles/js/g.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home page</a></li>
+          
+        </ul>
+    </nav>
+<br>
+<br>
+<div class="nadpis">
+
+    <h1>moje grafické projekty</h1>
+    <div class="gallery">
+        <div class="image-box">
+            <img src="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" alt="Obrázek 1">
+            <p>Mona Lisa</p>
+        </div>
+        <div class="image-box">
+            <img src="mesi.jpg" alt="Obrázek 2">
+            <p>Lionel Messi poster</p>
+        </div>
+        <div class="ferrari">
+            <img src="Návrhová plocha 2.png" alt="Obrázek 3" ">
+            <p>Ferrari poster</p>
+        </div>
+        <div class="image-box">
+            <img  src="doom 4.jpg" alt="Obrázek 4" width="36px">
+            <p>Doom poster</p>
+        </div>
+    </div>
+<p>sws</p>
+    
+
+    <script>
+        window.onload = function() {
+            let obrazek = document.getElementById("obrazek");
+            let pozice = -200; // Start mimo obrazovku
+
+            function animace() {
+                if (pozice < 200) { // Cílová pozice
+                    pozice += 5; // Posun o 5px
+                    obrazek.style.left = pozice + "px";
+                    requestAnimationFrame(animace);
+                }
+            }
+
+            animace();
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="g.js"></script>
+
+</body>
+</html>

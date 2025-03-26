@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(38, 0, 255);
+    height: 200vh;
+    bottom: 0cm;
+    height: 200vh;
+}
+.content{
+    flex: 1;
+    background-color: brown;
+}
+footer{
+    color: rgb(249, 249, 249);
+    justify-content: center;
+    display: flex;
+    background-color: brown;
+   position: fixed;
+   width: 100%;
+}
+.class{
+    position: fixed;
+    color: aliceblue;
+}
+.column{
+    float: left;
+    width: 50%;
+    color: rgb(0, 0, 0);
+   font-size: 500%;
+   font-family: 'Gambetta-Bold'; 
+    src: url('fonts/Gambetta-Bold');
+}
+.picture{
+  color: rgb(253, 253, 253);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+
+}
+.column {
+    float: right;
+    width: 50%;
+    font-family:'Gambetta-Bold';
+    src: url('fonts/Gambetta-Bold.woff') format('woff');   
+    
+  }
+  .ahoj{
+    color: aliceblue;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .text{
+ font-size: x-large;
+  }
+  .ferrrari{
+    color: black;
+  }
+.section{
+height: 1000vh;
+float: right;
+}
+.html{
+    scroll-behavior: smooth;
+}
+@media (width <= 750px) {
+    footer{
+        color: rgb(86, 0, 0);
+        justify-content: center;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+       position: fixed;
+       width: 100%;
+    }
+    .content{
+        flex: 1;
+        background-color: brown;
+        flex-direction: column;
+    }
+    .column{
+        float: left;
+        width: 50%;
+        color: rgb(255, 251, 251);
+       font-size: 500%;
+       font-family: 'Gambetta-Bold'; 
+        src: url('fonts/Gambetta-Bold');
+    }
+    .picture{
+        color: rgb(255, 255, 255);
+        display: flex;
+      }
+      .column {
+    float: left;
+    width: 50%;
+    font-family:'Gambetta-Bold';
+    src: url('fonts/Gambetta-Bold.woff') format('woff');   
+    
+  }
+  .ahoj{
+    color: rgb(0, 0, 0);
+  }
+  
+     
+}
+.h1{
+  font-size: xx-large;
+  color: brown;
+}
+/* Horizontální scroll */
+.horizontal-scroll {
+  height: 100vh;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.horizontal-content {
+  display: flex;
+  gap: 20px;
+}
+.box{
+  height: 100;
+  width: 100;
+}
